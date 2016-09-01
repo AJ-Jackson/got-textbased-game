@@ -1,169 +1,169 @@
-<meta charset="utf-8">
+<html>
+    <head>
+        <meta charset="utf-8">
     </head>
     <body>
-  <center><h1>GAME OF THRONES</h1></center>
-  <center><h3>The Texted-Based Game by Demethius "AJ" Jackson</h3></center>
-<center><p>Seize the <b>Iron Throne</b> and rule the <b>7 Kingdoms.</b></p></center>
-<center><img src="http://randomwallpapers.net/game-of-thrones-got-tv-shows-1920x1080-wallpaper413761.jpg"></center>
+        <center><h1>GAME OF THRONES</h1></center>
+        <center><h3>The Texted-Based Game by Demethius "AJ" Jackson</h3></center>
+        <center><p>Seize the <b>Iron Throne</b> and rule the <b>7 Kingdoms.</b></p></center>
+        <center><img src="http://randomwallpapers.net/game-of-thrones-got-tv-shows-1920x1080-wallpaper413761.jpg"></center>
 
-<script>
-//Global Variables
-var startGame = prompt("This is a trecherous game. You might not survive! Do you wish to play? \n \n Type Either:  y / n  (Use lower caps only)", "You must enter \"y\"  or \"n\" or the screen will close!");
-var reStartGame = startGame;
-var gameOver = "Game Over!";
-var gameControl1 = ["y","n"];
-var gameControl2 = ["a","b","c"];
-var endGame = window.close();
+        <script>
+        //Global Variables
+        var startGame = prompt("This is a trecherous game. You might not survive! Do you wish to play? \n \n Type Either:  y / n  (Use lower caps only)", "You must enter \"y\"  or \"n\" or the screen will close!");
+        var reStartGame = startGame;
+        var gameOver = "Game Over!";
+        var gameControl1 = ["y","n"];
+        var gameControl2 = ["a","b","c"];
+        var endGame = window.close();
 
-//Game Actually Begins Here.
-if (startGame == "y")
-{
-    var name = prompt("What is your name?", "Enter Your First Name");
-    alert("Oh no, " + name + "! You've just been killed by someone who saw your young ambition!!!");
-    alert(gameOver);
-    var startOver = prompt("Would you like to be revived by the Lord of Light? \n \n Type Either:  y / n  (Use lower caps only)","You must enter y / n or the screen will close!" , "You must enter \"y\"  or \"n\" or the screen will close!");
-            if (startOver == "y")
-                {
-                    resumeGame();
-                }
-            if (startOver == "n")
-                {
-                alert("Rest In Peace, " + name + ".");
-                alert(gameOver);
-                } 
-}
-if (startGame == "n")
-{
-alert("That's fine. Not playing is probably healthier.");
-alert(gameOver);
-}
-
-
-//This is where the game resumes after the initial begining sequence.
-//Adventure Question #1
-
-function resumeGame()
-{
-  userInput = prompt("You are visited by King Robert Baratheon. He wants to make you his advisor! Will you accept this honor and become the Hand of the King?\n \n Type Either:  y / n  (Use lower caps only)" , "You must enter \"y\"  or \"n\" or the screen will close!");
-  
-  if(userInput=="y")
-  {
-      resumeGame2();
-  }
-  else
-  {
-      alert("Too bad, " + name + ". You've just been killed by the King for treason!!!");
-    var startOver = prompt("Would you like to be revived by the Lord of Light? \n \n Type Either:  y / n  (Use lower caps only)" , "You must enter \"y\"  or \"n\" or the screen will close!");
-            if (startOver == "y")
-                {
-                    resumeGame();
-                }
-            if (startOver == "n")
-                {
-                alert("Rest In Peace, " + name + ".");
-                alert(gameOver);
-                } 
-  }    
-}     
-
-//Adventure Question #2
-function resumeGame2()
-{
-  userInput = prompt("While in Westeros, you accidentally catch the Queen having sex with her brother!!! Do you: \n \n 1. Kill them both? \n 2. Flee and tell the King? \n 3. Try to blackmail them?", "You must enter \"1\"  or \"2\" or \"3\" or the screen will close!");
- 
- switch(userInput)
-  {
-    case "1":
-      resumeGame3();
-      break;
-    case "2":
-      alert("Ouch! You were stabbed in the eye before you could flee.");
-      alert("Game Over");
-      break;
-      case "3":
-      alert("Are you stupid, " + name + "? You can't blackmail the Queen and her Brother-Lover. Your neck has just been sliced, and now you die slow.");
-      alert("Game Over");
-      break;
-    default:
-     alert("Game Over");
-  }
-}
-
-//Adventure Question #3
-
-function resumeGame3()
-{
-  userInput = prompt("Oh no. A Councilman saw you murder the Queen and her Brother-Lover. Would you like to kill the Councilman, also?\n \n Type Either:  y / n  (Use lower caps only)", "You must enter \"y\"  or \"n\" or the screen will close!" );
-  
-  if(userInput=="y")
-  {
-      resumeGame4();
-  }
-  else
-  {
-      alert("The Councilman informed the King of your vile trechery. You've just been executed for treason!!!");
-      alert(gameOver);
-  }    
-}     
+        //Game Actually Begins Here.
+        if (startGame == "y")
+        {
+            var name = prompt("What is your name?", "Enter Your First Name");
+            alert("Oh no, " + name + "! You've just been killed by someone who saw your young ambition!!!");
+            alert(gameOver);
+            var startOver = prompt("Would you like to be revived by the Lord of Light? \n \n Type Either:  y / n  (Use lower caps only)","You must enter y / n or the screen will close!" , "You must enter \"y\"  or \"n\" or the screen will close!");
+                    if (startOver == "y")
+                        {
+                            resumeGame();
+                        }
+                    if (startOver == "n")
+                        {
+                        alert("Rest In Peace, " + name + ".");
+                        alert(gameOver);
+                        } 
+        }
+        if (startGame == "n")
+        {
+        alert("That's fine. Not playing is probably healthier.");
+        alert(gameOver);
+        }
 
 
-//Adventure Question #4
-function resumeGame4()
-{
-  userInput = prompt("Nothing in Westeros remains a secret for too long. The King has heard rumors that it was YOU who killed the Queen, her Brother, and perhaps even a long-seated Councilman! Do you: \n \n 1. Try to reason with the King? \n 2. Kill the King?" , "You must enter \"1\"  or \"2\" or the screen will close!");
+        //This is where the game resumes after the initial begining sequence.
+        //Adventure Question #1
+        function resumeGame()
+        {
+          userInput = prompt("You are visited by King Robert Baratheon. He wants to make you his advisor! Will you accept this honor and become the Hand of the King?\n \n Type Either:  y / n  (Use lower caps only)" , "You must enter \"y\"  or \"n\" or the screen will close!");
+          
+          if(userInput=="y")
+          {
+              resumeGame2();
+          }
+          else
+          {
+              alert("Too bad, " + name + ". You've just been killed by the King for treason!!!");
+            var startOver = prompt("Would you like to be revived by the Lord of Light? \n \n Type Either:  y / n  (Use lower caps only)" , "You must enter \"y\"  or \"n\" or the screen will close!");
+                    if (startOver == "y")
+                        {
+                            resumeGame();
+                        }
+                    if (startOver == "n")
+                        {
+                        alert("Rest In Peace, " + name + ".");
+                        alert(gameOver);
+                        } 
+          }    
+        }     
 
- switch(userInput)
-  {
-    case "1":
-    	alert("Are you serious, " + name + "? You can't reason with the King!!! Slowly, he strangles you to death while sobbing bloody, miserable tears. You made him do this. YOU MADE HIM DO THIS!!!");
-      alert("Game Over");
-      break;
-    case "2":
-         resumeGame5();
-      break;
-    default:
-     alert("Game Over");
-  }
-}
+        //Adventure Question #2
+        function resumeGame2()
+        {
+          userInput = prompt("While in Westeros, you accidentally catch the Queen having sex with her brother!!! Do you: \n \n 1. Kill them both? \n 2. Flee and tell the King? \n 3. Try to blackmail them?", "You must enter \"1\"  or \"2\" or \"3\" or the screen will close!");
+         
+         switch(userInput)
+          {
+            case "1":
+              resumeGame3();
+              break;
+            case "2":
+              alert("Ouch! You were stabbed in the eye before you could flee.");
+              alert("Game Over");
+              break;
+              case "3":
+              alert("Are you stupid, " + name + "? You can't blackmail the Queen and her Brother-Lover. Your neck has just been sliced, and now you die slow.");
+              alert("Game Over");
+              break;
+            default:
+             alert("Game Over");
+          }
+        }
 
-//Adventure Question #5
-function resumeGame5()
-{
-  userInput = prompt("CONGRATULATIONS, " + name + "!!! You've just become the new Ruler of the 7 Kingdoms! But alas, Westeros has suddenly been attacked by a hord of Wildlings.  Do you: \n \n 1. Fight the Wildings? \n 2. Flee from the Kingdom to safety?", "You must enter \"1\"  or \"2\" or the screen will close!");
-
- switch(userInput)
-  {
-    case "1":
-    	 resumeGame6();
-      break;
-    case "2":
-    alert("You coward! How dare you abandon your people. The Wildlings find you and eat you.");
-      alert("Game Over");
-      break;
-    default:
-     alert("Game Over");
-  }
-}
-
-//Adventure Question #6
-function resumeGame6()
-{
-  userInput = prompt("Victory!!! You defeated the Wildlings. But now Winter is here... with it, comes an army of White Walkers. They attack the Kingdom. Do you: \n \n 1. Fight the White Walkers? \n 2. Evacuate all of Westeros?", "You must enter \"1\"  or \"2\" or the screen will close!");
-
- switch(userInput)
-  {
-    case "1":
-    	alert("Fight as you might, eventually you will be defeated and killed. You've played a great game, " + name + ". But ultimately, nobody can ever win the Game of Thrones.");
-      alert("Game Over");
-      break;
-    case "2":
-    alert("That was probably the responsible thing to do. But ultimately, the White Walkers will track you down and kill you all. You've played a great game, " + name + ". But unfortunately, nobody can ever win the Game of Thrones.");
-      alert("Game Over");
-      break;
-    default:
-     alert("Game Over");
-  }
-}
+        //Adventure Question #3
+        function resumeGame3()
+        {
+          userInput = prompt("Oh no. A Councilman saw you murder the Queen and her Brother-Lover. Would you like to kill the Councilman, also?\n \n Type Either:  y / n  (Use lower caps only)", "You must enter \"y\"  or \"n\" or the screen will close!" );
+          
+          if(userInput=="y")
+          {
+              resumeGame4();
+          }
+          else
+          {
+              alert("The Councilman informed the King of your vile trechery. You've just been executed for treason!!!");
+              alert(gameOver);
+          }    
+        }     
+        
+        
+        //Adventure Question #4
+        function resumeGame4()
+        {
+          userInput = prompt("Nothing in Westeros remains a secret for too long. The King has heard rumors that it was YOU who killed the Queen, her Brother, and perhaps even a long-seated Councilman! Do you: \n \n 1. Try to reason with the King? \n 2. Kill the King?" , "You must enter \"1\"  or \"2\" or the screen will close!");
+        
+         switch(userInput)
+          {
+            case "1":
+            	alert("Are you serious, " + name + "? You can't reason with the King!!! Slowly, he strangles you to death while sobbing bloody, miserable tears. You made him do this. YOU MADE HIM DO THIS!!!");
+              alert("Game Over");
+              break;
+            case "2":
+                 resumeGame5();
+              break;
+            default:
+             alert("Game Over");
+          }
+        }
+        
+        //Adventure Question #5
+        function resumeGame5()
+        {
+          userInput = prompt("CONGRATULATIONS, " + name + "!!! You've just become the new Ruler of the 7 Kingdoms! But alas, Westeros has suddenly been attacked by a hord of Wildlings.  Do you: \n \n 1. Fight the Wildings? \n 2. Flee from the Kingdom to safety?", "You must enter \"1\"  or \"2\" or the screen will close!");
+        
+         switch(userInput)
+          {
+            case "1":
+            	 resumeGame6();
+              break;
+            case "2":
+            alert("You coward! How dare you abandon your people. The Wildlings find you and eat you.");
+              alert("Game Over");
+              break;
+            default:
+             alert("Game Over");
+          }
+        }
+        
+        //Adventure Question #6
+        function resumeGame6()
+        {
+          userInput = prompt("Victory!!! You defeated the Wildlings. But now Winter is here... with it, comes an army of White Walkers. They attack the Kingdom. Do you: \n \n 1. Fight the White Walkers? \n 2. Evacuate all of Westeros?", "You must enter \"1\"  or \"2\" or the screen will close!");
+        
+         switch(userInput)
+          {
+            case "1":
+            	alert("Fight as you might, eventually you will be defeated and killed. You've played a great game, " + name + ". But ultimately, nobody can ever win the Game of Thrones.");
+              alert("Game Over");
+              break;
+            case "2":
+            alert("That was probably the responsible thing to do. But ultimately, the White Walkers will track you down and kill you all. You've played a great game, " + name + ". But unfortunately, nobody can ever win the Game of Thrones.");
+              alert("Game Over");
+              break;
+            default:
+             alert("Game Over");
+          }
+        }
 </script>
 </body>
 </html>
